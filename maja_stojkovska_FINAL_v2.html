@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="description" content="Адвокатска канцеларија Маја Стојковска — договорно, наследно, граѓанско, корпоративно и стопанско право. Застапување пред судови. Скопје."/>
+<meta name="theme-color" content="#0f1923"/>
+<title>Адвокат Маја Стојковска | Адвокатска канцеларија Скопје</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<!-- Non-render-blocking font load -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/></noscript>
+<style>
+/* ═══ RESET ═══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;font-size:16px;-webkit-tap-highlight-color:transparent}
+body{font-family:'Montserrat',sans-serif;color:#3a3a3a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}ul{list-style:none}
+button{cursor:pointer;font-family:inherit;border:none;background:none;-webkit-tap-highlight-color:transparent}
+address{font-style:normal}img,svg{display:block;max-width:100%}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* ═══ TOKENS ═══ */
+:root{
+  --navy:#0f1923;--navy-mid:#162030;--navy-light:#1e2d40;--navy-soft:#253345;
+  --gold:#b89a5a;--gold-lt:#d4b678;--gold-dim:#8a7240;--gold-glow:rgba(184,154,90,.35);
+  --ivory:#f5f0e8;--ivory-dk:#ede8de;--beige:#f8f4ee;
+  --gray:#6b7280;--gray-lt:#9ca3af;
+  --border:rgba(184,154,90,.18);--border-dk:rgba(255,255,255,.08);
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Montserrat',sans-serif;
+  --r-sm:4px;--r-md:8px;--r-lg:16px;--r-xl:24px;--r-full:9999px;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.08);
+  --shadow-md:0 4px 16px rgba(0,0,0,.1),0 2px 6px rgba(0,0,0,.06);
+  --shadow-lg:0 10px 40px rgba(0,0,0,.14),0 4px 12px rgba(0,0,0,.08);
+  --shadow-gold:0 4px 24px rgba(184,154,90,.3);
+  --t-fast:150ms ease;--t-base:250ms ease;--t-slow:400ms ease;--t-spring:350ms cubic-bezier(.34,1.56,.64,1)
+}
+
+/* ═══ LAYOUT ═══ */
+.container{max-width:1240px;margin:0 auto;padding:0 1.5rem}
+.section{padding:6rem 0}
+@media(max-width:767px){.section{padding:4rem 0}}
+/* content-visibility: auto skips paint/layout of off-screen sections */
+.about,.services,.trust,.faq,.legal-process-section,.process{content-visibility:auto;contain-intrinsic-size:0 600px}
+.section-dark{background:var(--navy);color:var(--ivory)}
+.section-beige{background:var(--beige)}
+.skip-link{position:absolute;top:-100%;left:1rem;background:var(--gold);color:var(--navy);padding:.5rem 1rem;border-radius:var(--r-sm);font-weight:600;font-size:.75rem;z-index:9999;transition:top var(--t-fast)}
+.skip-link:focus{top:1rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:var(--r-sm)}
+
+/* ═══ TYPOGRAPHY ═══ */
+.section-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.section-eyebrow::before{content:'';display:inline-block;width:28px;height:1px;background:var(--gold)}
+.section-eyebrow-lt{color:var(--gold-lt)}.section-eyebrow-lt::before{background:var(--gold-lt)}
+.section-heading{font-family:var(--serif);font-size:clamp(1.875rem,4vw,3rem);font-weight:600;line-height:1.2;color:var(--navy);margin-bottom:1.5rem}
+.section-heading-lt{color:var(--ivory)}
+.section-sub{font-size:1.125rem;color:var(--gray);max-width:600px;line-height:1.7;margin-bottom:2rem}
+.section-sub-lt{color:var(--gray-lt)}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header .section-eyebrow,.section-header .section-eyebrow::before{display:inline-flex}
+.section-header .section-sub{margin:0 auto 2rem}
+.section-cta-center{text-align:center;margin-top:3rem;display:flex;flex-direction:column;align-items:center;gap:1rem}
+.cta-pre{font-family:var(--serif);font-size:1.25rem;color:var(--gray);font-style:italic}
+
+/* ═══════════════════════════════════════
+   BUTTONS — shine micro-interaction
+═══════════════════════════════════════ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.875rem 1.75rem;border-radius:var(--r-sm);
+  font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  cursor:pointer;white-space:nowrap;border:1.5px solid transparent;
+  min-height:48px;touch-action:manipulation;user-select:none;
+  position:relative;overflow:hidden;
+  transition:background var(--t-base),border-color var(--t-base),box-shadow var(--t-base),transform var(--t-fast)
+}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+/* Gold shine sweep on hover */
+.btn::after{
+  content:'';position:absolute;
+  top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);
+  transition:left .55s ease;pointer-events:none
+}
+.btn:hover::after{left:160%}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt);box-shadow:var(--shadow-gold)}
+.btn-outline{background:transparent;border-color:var(--navy);color:var(--navy)}
+.btn-outline:hover{background:var(--navy);color:var(--ivory)}
+.btn-outline-lt{background:transparent;border-color:rgba(255,255,255,.3);color:var(--ivory)}
+.btn-outline-lt:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+.btn-gold-outline{background:transparent;border-color:var(--gold);color:var(--gold)}
+.btn-gold-outline:hover{background:var(--gold);color:var(--navy)}
+.btn-lg{padding:1rem 2.25rem;font-size:1rem}
+.btn-full{width:100%}
+
+/* ═══════════════════════════════════════
+   HEADER
+═══════════════════════════════════════ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  background:rgba(15,25,35,.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border-dk);
+  transition:background var(--t-base),box-shadow var(--t-base)
+}
+.site-header.scrolled{background:rgba(15,25,35,.99);box-shadow:0 2px 20px rgba(0,0,0,.3)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:80px}
+.logo{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.logo-initials{
+  width:42px;height:42px;background:var(--gold);color:var(--navy);border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.25rem;font-weight:700;flex-shrink:0;
+  transition:transform var(--t-spring),box-shadow var(--t-base)
+}
+.logo:hover .logo-initials{transform:rotate(-3deg) scale(1.08);box-shadow:var(--shadow-gold)}
+.logo-text{display:flex;flex-direction:column;line-height:1.2}
+.logo-title{font-family:var(--serif);font-size:1.125rem;font-weight:600;color:var(--ivory)}
+.logo-subtitle{font-size:.7rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.main-nav .nav-list{display:flex;align-items:center;gap:.5rem}
+.nav-link{
+  font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(245,240,232,.75);padding:.5rem .75rem;border-radius:var(--r-sm);
+  transition:color var(--t-fast);position:relative;min-height:44px;display:flex;align-items:center
+}
+.nav-link::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);width:0;height:1px;background:var(--gold);transition:width var(--t-base)}
+.nav-link:hover{color:var(--ivory)}.nav-link:hover::after,.nav-link.active::after{width:75%}
+.nav-link.active{color:var(--gold)}
+.header-actions{display:flex;align-items:center;gap:1rem}
+.header-cta{display:none}
+@media(min-width:1024px){.header-cta{display:inline-flex}}
+.btn-call-m{
+  display:none;width:44px;height:44px;border-radius:var(--r-sm);
+  background:var(--gold);color:var(--navy);align-items:center;justify-content:center;
+  transition:all var(--t-fast);flex-shrink:0;touch-action:manipulation
+}
+.btn-call-m svg{width:18px;height:18px}
+.btn-call-m:active{background:var(--gold-lt);transform:scale(.95)}
+@media(max-width:1023px){.btn-call-m{display:flex}}
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:10px;border-radius:var(--r-sm);touch-action:manipulation;flex-shrink:0}
+.hline{display:block;height:1.5px;background:var(--ivory);border-radius:2px;transition:transform var(--t-base),opacity var(--t-base),width var(--t-base);transform-origin:center}
+.hline:nth-child(1){width:100%}.hline:nth-child(2){width:75%}.hline:nth-child(3){width:100%}
+.hamburger[aria-expanded=true] .hline:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%}
+.hamburger[aria-expanded=true] .hline:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger[aria-expanded=true] .hline:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:80;opacity:0;transition:opacity var(--t-base)}
+.mob-overlay.active{opacity:1}
+@media(max-width:767px){
+  .hamburger{display:flex}
+  .main-nav{
+    position:fixed;top:0;right:-100%;width:min(320px,85vw);height:100%;
+    background:var(--navy);border-left:1px solid var(--border-dk);
+    z-index:100;transition:right var(--t-slow);
+    padding:88px 1.5rem 2rem;display:flex;flex-direction:column;overflow-y:auto
+  }
+  .main-nav.open{right:0}
+  .main-nav .nav-list{flex-direction:column;align-items:flex-start;gap:0}
+  .nav-link{font-size:1.1rem;padding:1rem 0;width:100%;border-bottom:1px solid var(--border-dk);letter-spacing:.04em;min-height:56px}
+  .nav-link::after{display:none}
+  .mob-overlay{display:block}
+}
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero{
+  min-height:100svh;background:var(--navy);color:var(--ivory);
+  display:flex;flex-direction:column;position:relative;overflow:hidden
+}
+.hero-bg-pattern{position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(184,154,90,.06) 0,transparent 50%),radial-gradient(circle at 80% 20%,rgba(184,154,90,.04) 0,transparent 50%);pointer-events:none}
+.hero-bg-lines{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(184,154,90,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,154,90,.04) 1px,transparent 1px);
+  background-size:64px 64px;pointer-events:none;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%)
+}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding-top:calc(80px + 5rem);padding-bottom:5rem;flex:1}
+.hero-eyebrow{display:flex;align-items:center;gap:.75rem;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.eyebrow-line{display:inline-block;width:32px;height:1px;background:var(--gold)}
+.hero-heading{font-family:var(--serif);font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:600;line-height:1.1;color:#fff;margin-bottom:1.5rem;letter-spacing:-.01em}
+.hero-heading em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:1.125rem;color:rgba(245,240,232,.75);line-height:1.75;max-width:560px;margin-bottom:2.5rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-actions .btn{flex:1 1 160px;max-width:230px}
+
+/* ─── Floating mini legal icons ─── */
+.hero-icons{position:relative;display:flex;justify-content:center;align-items:center;height:360px}
+.fi{
+  position:absolute;
+  width:64px;height:64px;border-radius:var(--r-lg);
+  background:rgba(255,255,255,.06);border:1px solid rgba(184,154,90,.25);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  cursor:pointer;
+  transition:transform var(--t-spring),box-shadow var(--t-base),background var(--t-base),border-color var(--t-base);
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  will-change:transform
+}
+.fi svg{width:26px;height:26px;color:var(--gold);pointer-events:none}
+.fi-label{font-size:8px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,240,232,.5);pointer-events:none;line-height:1}
+.fi:hover,.fi:active{
+  transform:translateY(-8px) rotate(-3deg) scale(1.12)!important;
+  background:rgba(184,154,90,.12);border-color:rgba(184,154,90,.6);
+  box-shadow:0 16px 32px rgba(0,0,0,.35),0 0 0 1px rgba(184,154,90,.3),inset 0 1px 0 rgba(255,255,255,.1)
+}
+.fi:active{transform:translateY(-4px) scale(1.06)!important}
+/* Positions */
+.fi-scales{top:20px;left:50%;transform:translateX(-50%);animation:flt1 6s ease-in-out infinite}
+.fi-contract{top:80px;left:10%;animation:flt2 7s ease-in-out infinite}
+.fi-pen{top:80px;right:10%;animation:flt3 5.5s ease-in-out infinite}
+.fi-courthouse{bottom:70px;left:15%;animation:flt4 6.5s ease-in-out infinite}
+.fi-shield{bottom:70px;right:15%;animation:flt5 7.5s ease-in-out infinite}
+/* Center seal — glow via pseudo-element opacity (GPU composited, no layout) */
+.hero-seal{
+  width:88px;height:88px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold-dim),var(--gold));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:1.8rem;font-weight:700;color:var(--navy);
+  box-shadow:0 0 0 6px rgba(184,154,90,.15),0 12px 32px rgba(0,0,0,.4);
+  flex-shrink:0;position:relative;z-index:5
+}
+.hero-seal::after{
+  content:'';position:absolute;inset:-8px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,154,90,.18) 0%,transparent 70%);
+  animation:pulse-seal 4s ease-in-out infinite;pointer-events:none
+}
+@keyframes flt1{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-9px)}}
+@keyframes flt2{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes flt3{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(2deg)}}
+@keyframes flt4{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes flt5{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-11px) rotate(-2deg)}}
+@keyframes pulse-seal{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}
+
+/* Stats strip */
+.stats-strip{background:rgba(255,255,255,.04);border-top:1px solid var(--border-dk)}
+.stats-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;padding:1.5rem}
+.stat-item{display:flex;align-items:center;gap:.75rem;padding:1rem 2rem;flex:1;min-width:180px;justify-content:center}
+.stat-number{font-family:var(--serif);font-size:3rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-plus{font-family:var(--serif);font-size:1.5rem;color:var(--gold);align-self:flex-start;margin-top:4px}
+.stat-label{font-size:.7rem;color:rgba(245,240,232,.7);letter-spacing:.04em;line-height:1.5}
+.stat-icon{font-size:1.75rem;line-height:1}
+.stat-divider{width:1px;height:40px;background:var(--border-dk);flex-shrink:0}
+.scroll-ind{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;animation:bounce 2s ease-in-out infinite}
+.scroll-line{display:block;width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--gold))}
+.scroll-txt{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);opacity:.7}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@media(max-width:767px){
+  .hero-inner{grid-template-columns:1fr;padding-top:calc(80px + 3rem);padding-bottom:3rem;text-align:center;gap:2rem}
+  .hero-eyebrow{justify-content:center}
+  .hero-sub{margin:0 auto 2.5rem}
+  .hero-actions{justify-content:center}
+  .hero-actions .btn{flex:1 1 140px;max-width:none}
+  .hero-icons{height:280px}
+  .fi{width:56px;height:56px;backdrop-filter:none;-webkit-backdrop-filter:none}.fi svg{width:22px;height:22px}
+  .hero-seal{width:72px;height:72px;font-size:1.5rem}
+  .fi-scales{top:10px}.fi-contract{top:60px;left:5%}.fi-pen{top:60px;right:5%}
+  .fi-courthouse{bottom:50px;left:8%}.fi-shield{bottom:50px;right:8%}
+  .stat-item{padding:.75rem 1rem;min-width:140px}.stat-divider{display:none}.scroll-ind{display:none}
+}
+
+/* ═══════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════ */
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.about-para{font-size:1.125rem;color:var(--gray);line-height:1.75;margin-bottom:1.5rem}
+.about-edu{font-family:var(--serif);color:#3a3a3a;font-size:1.25rem;border-left:2px solid var(--gold);padding-left:1rem;margin-bottom:2rem}
+.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.value-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;transition:transform var(--t-base),box-shadow var(--t-base),border-color var(--t-base)}
+.value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.value-icon{width:40px;height:40px;color:var(--gold);margin-bottom:1rem}.value-icon svg{width:100%;height:100%}
+.value-title{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.value-desc{font-size:.875rem;color:var(--gray);line-height:1.6}
+@media(max-width:767px){.about-inner{grid-template-columns:1fr;gap:2.5rem}}
+
+/* ═══════════════════════════════════════
+   SERVICES — tilt card + flip
+═══════════════════════════════════════ */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+/* Tilt wrapper */
+.service-card{
+  background:rgba(255,255,255,.04);border:1px solid var(--border-dk);border-radius:var(--r-lg);
+  overflow:hidden;cursor:pointer;
+  transition:border-color var(--t-base),box-shadow var(--t-base);
+  transform-style:preserve-3d
+}
+.service-card:hover{will-change:transform}
+.service-card:focus{outline:none;border-color:rgba(184,154,90,.5)}
+.service-card.expanded{border-color:var(--gold)}
+.service-card-inner{padding:1.5rem}
+.service-icon{width:48px;height:48px;color:var(--gold);margin-bottom:1rem;opacity:.9}.service-icon svg{width:100%;height:100%}
+.service-title{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--ivory);margin-bottom:.75rem;line-height:1.3}
+.service-short{font-size:.875rem;color:rgba(245,240,232,.65);line-height:1.65;margin-bottom:1rem}
+.service-expanded{overflow:hidden;max-height:0;transition:max-height var(--t-slow),opacity var(--t-slow);opacity:0}
+.service-expanded.open{max-height:280px;opacity:1}
+.service-expanded-inner{padding-top:.75rem;border-top:1px solid var(--border-dk)}
+.service-when{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;margin-top:.75rem}
+.service-when-text{font-size:.875rem;color:rgba(245,240,232,.7);line-height:1.55;margin-bottom:1rem;font-style:italic}
+.service-expanded p:first-child{font-size:.875rem;color:rgba(245,240,232,.75);line-height:1.65;margin-bottom:.75rem}
+.service-toggle{display:flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:.5rem 0;min-height:44px;touch-action:manipulation}
+.service-toggle:hover,.service-toggle:active{color:var(--gold-lt)}
+.toggle-icon{width:16px;height:16px;transition:transform var(--t-base)}
+.service-toggle[aria-expanded=true] .toggle-icon{transform:rotate(180deg)}
+.service-toggle[aria-expanded=true] .toggle-text{display:none}
+.service-toggle[aria-expanded=true]::before{content:'Помалку';font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:1023px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:599px){.services-grid{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════
+   LEGAL PROCESS INTERACTIVE TIMELINE
+═══════════════════════════════════════ */
+.legal-process-section{background:var(--navy-light);padding:5rem 0}
+@media(max-width:767px){.legal-process-section{padding:3.5rem 0}}
+.lp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(184,154,90,.1);border-radius:var(--r-xl);overflow:hidden;margin-top:2.5rem}
+.lp-step{
+  background:var(--navy);padding:1.75rem 1.25rem;cursor:pointer;
+  transition:background var(--t-base);position:relative;overflow:hidden;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  display:flex;flex-direction:column;align-items:center;text-align:center
+}
+.lp-step::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;
+  transition:transform var(--t-base)
+}
+.lp-step:hover,.lp-step.active{background:rgba(255,255,255,.04)}
+.lp-step.active::before,.lp-step:hover::before{transform:scaleX(1)}
+.lp-num{
+  width:52px;height:52px;border-radius:50%;
+  border:1.5px solid rgba(184,154,90,.3);color:rgba(184,154,90,.5);
+  font-family:var(--serif);font-size:1.5rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto .875rem;flex-shrink:0;
+  transition:all var(--t-base)
+}
+.lp-step.active .lp-num,.lp-step:hover .lp-num{
+  background:var(--gold);border-color:var(--gold);color:var(--navy);
+  box-shadow:0 0 0 6px rgba(184,154,90,.12)
+}
+.lp-title{font-family:var(--serif);font-size:1rem;font-weight:600;color:rgba(245,240,232,.5);transition:color var(--t-base);line-height:1.3}
+.lp-step.active .lp-title,.lp-step:hover .lp-title{color:var(--ivory)}
+.lp-arrow{
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(184,154,90,.25);font-size:.9rem;
+  position:absolute;right:-1px;top:50%;transform:translateY(-50%);z-index:2
+}
+/* Panel */
+.lp-panel{
+  margin-top:1.5rem;display:none;
+  background:rgba(255,255,255,.04);border:1px solid rgba(184,154,90,.2);
+  border-radius:var(--r-xl);padding:2rem 2.5rem;
+  animation:lp-fade .3s ease
+}
+@keyframes lp-fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.lp-panel.active{display:block}
+.lp-panel-row{display:flex;gap:1.5rem;align-items:flex-start}
+.lp-panel-icon{
+  width:52px;height:52px;border-radius:50%;flex-shrink:0;
+  background:rgba(184,154,90,.12);border:1px solid rgba(184,154,90,.25);
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem
+}
+.lp-panel-title{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--ivory);margin-bottom:.5rem}
+.lp-panel-desc{font-size:.9rem;color:rgba(245,240,232,.7);line-height:1.7;margin-bottom:1rem}
+.lp-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.lp-tag{
+  font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--gold);background:rgba(184,154,90,.1);border:1px solid rgba(184,154,90,.2);
+  border-radius:var(--r-full);padding:.3rem .875rem
+}
+@media(max-width:767px){
+  .lp-steps{grid-template-columns:repeat(2,1fr)}
+  .lp-panel{padding:1.5rem}
+  .lp-panel-row{flex-direction:column;gap:1rem}
+  .lp-panel-icon{display:none}
+}
+
+/* ═══════════════════════════════════════
+   PROCESS TIMELINE (original)
+═══════════════════════════════════════ */
+.process-timeline{display:flex;gap:0;position:relative;margin-bottom:1rem}
+@media(min-width:768px){
+  .process-timeline{align-items:flex-start;justify-content:space-between}
+  .timeline-item{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative}
+  .timeline-number{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--serif);font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center;position:relative;z-index:2;margin-bottom:1.5rem}
+  .timeline-connector{position:absolute;top:28px;left:calc(50% + 28px);right:calc(-50% + 28px);height:1px;background:linear-gradient(to right,var(--gold),rgba(184,154,90,.3));z-index:1}
+  .timeline-item:last-child .timeline-connector{display:none}
+  .timeline-content{padding:0 1rem}
+  .timeline-title{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+  .timeline-desc{font-size:.875rem;color:var(--gray);line-height:1.65}
+}
+@media(max-width:767px){
+  .process-timeline{flex-direction:column}
+  .timeline-item{display:grid;grid-template-columns:52px auto 1fr;gap:1rem;padding-bottom:2rem;align-items:start}
+  .timeline-number{width:52px;height:52px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--serif);font-size:1.25rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;z-index:2}
+  .timeline-connector{width:1px;background:linear-gradient(to bottom,var(--gold),rgba(184,154,90,.2));align-self:stretch;margin-top:8px}
+  .timeline-item:last-child .timeline-connector{display:none}
+  .timeline-content{padding-top:.5rem}
+  .timeline-title{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+  .timeline-desc{font-size:.875rem;color:var(--gray);line-height:1.65}
+}
+
+/* ═══════════════════════════════════════
+   TRUST
+═══════════════════════════════════════ */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:4rem}
+.trust-card{background:#fff;border:1px solid var(--ivory-dk);border-radius:var(--r-lg);padding:2rem 1.5rem;transition:transform var(--t-base),box-shadow var(--t-base),border-color var(--t-base)}
+.trust-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.trust-icon{width:40px;height:40px;color:var(--gold);margin-bottom:1rem}.trust-icon svg{width:100%;height:100%}
+.trust-title{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.trust-desc{font-size:.875rem;color:var(--gray);line-height:1.65}
+.legal-quote{background:var(--navy);border-radius:var(--r-xl);padding:3rem;position:relative;overflow:hidden;text-align:center}
+.legal-quote::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,154,90,.08) 0,transparent 60%)}
+.quote-mark{font-family:var(--serif);font-size:7rem;line-height:.6;color:var(--gold);opacity:.4;display:block;margin-bottom:1rem;position:relative;z-index:1}
+.quote-text{font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2.25rem);font-weight:400;font-style:italic;color:var(--ivory);line-height:1.5;position:relative;z-index:1;max-width:700px;margin:0 auto 1.5rem}
+.quote-footer{position:relative;z-index:1}
+.quote-footer cite{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-style:normal}
+@media(max-width:1023px){.trust-grid{grid-template-columns:repeat(2,1fr)}.legal-quote{padding:2rem}}
+@media(max-width:599px){.trust-grid{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════
+   CASE SELECTOR
+═══════════════════════════════════════ */
+.case-buttons{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-bottom:2rem}
+.case-btn{
+  font-size:.875rem;font-weight:600;padding:.875rem 1.5rem;min-height:48px;
+  border-radius:var(--r-full);border:1.5px solid rgba(184,154,90,.35);
+  color:rgba(245,240,232,.8);background:transparent;cursor:pointer;
+  transition:all var(--t-base);touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  position:relative;overflow:hidden
+}
+.case-btn::after{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.15) 50%,transparent 70%);transition:left .5s ease;pointer-events:none}
+.case-btn:hover::after{left:160%}
+.case-btn:hover{border-color:var(--gold);color:var(--ivory);background:rgba(184,154,90,.1)}
+.case-btn.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.case-result{max-width:680px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(184,154,90,.3);border-radius:var(--r-lg);padding:2rem;text-align:center;animation:fadeUp .35s ease}
+.case-result-inner{display:flex;flex-direction:column;align-items:center;gap:1.5rem}
+.case-result-text{font-family:var(--serif);font-size:1.5rem;font-style:italic;color:var(--ivory);line-height:1.6}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══════════════════════════════════════
+   FAQ
+═══════════════════════════════════════ */
+.faq-inner{max-width:780px;margin:0 auto}
+.faq-list{display:flex;flex-direction:column;gap:.75rem}
+.faq-item{background:#fff;border:1px solid var(--ivory-dk);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--t-fast),box-shadow var(--t-fast)}
+.faq-item.open{border-color:var(--gold);box-shadow:var(--shadow-md)}
+.faq-question{display:flex;align-items:center;justify-content:space-between;width:100%;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;gap:1rem;font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--navy);transition:color var(--t-fast);min-height:56px;touch-action:manipulation}
+.faq-question:hover,.faq-item.open .faq-question{color:var(--gold-dim)}
+.faq-icon{width:20px;height:20px;color:var(--gold);flex-shrink:0;transition:transform var(--t-base)}
+.faq-item.open .faq-icon{transform:rotate(180deg)}
+.faq-answer{overflow:hidden;max-height:0;transition:max-height var(--t-slow);padding:0 1.5rem}
+.faq-answer.open{max-height:300px;padding-bottom:1.5rem}
+.faq-answer p{font-size:1rem;color:var(--gray);line-height:1.75;border-top:1px solid var(--ivory-dk);padding-top:1rem}
+
+/* ═══════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════ */
+.contact-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:start}
+.contact-details{display:flex;flex-direction:column;gap:1.5rem;margin:2rem 0}
+.contact-detail-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-detail-icon{width:36px;height:36px;color:var(--gold);flex-shrink:0;margin-top:2px}.contact-detail-icon svg{width:100%;height:100%}
+.contact-detail-item strong{display:block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem}
+.contact-detail-item address,.contact-detail-item span,.contact-detail-item a{font-size:.875rem;color:rgba(245,240,232,.75);line-height:1.6;display:block}
+.contact-link:hover{color:var(--gold)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.contact-form-wrap{background:rgba(255,255,255,.04);border:1px solid var(--border-dk);border-radius:var(--r-xl);padding:2rem}
+.hp-field{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem}
+.form-row .form-group{margin-bottom:0}
+.form-label{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,240,232,.8)}
+.required{color:var(--gold);margin-left:2px}
+.optional{color:rgba(245,240,232,.4);font-weight:400;text-transform:none;letter-spacing:0;font-size:.7rem}
+.form-input{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--r-md);padding:.875rem 1rem;
+  font-family:var(--sans);font-size:1rem;/* prevents iOS zoom */
+  color:var(--ivory);width:100%;
+  transition:border-color var(--t-fast),box-shadow var(--t-fast);
+  outline:none;-webkit-appearance:none;appearance:none;min-height:48px
+}
+.form-input::placeholder{color:rgba(245,240,232,.3)}
+.form-input:focus{border-color:var(--gold);background:rgba(255,255,255,.08);box-shadow:0 0 0 3px rgba(184,154,90,.15)}
+.form-input.error{border-color:#e05252;box-shadow:0 0 0 3px rgba(224,82,82,.15)}
+.form-select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23b89a5a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:2.5rem}
+.form-select option{background:var(--navy-mid);color:var(--ivory)}
+.form-textarea{resize:vertical;min-height:130px;font-size:1rem}
+.form-consent{margin-top:.5rem}
+.consent-label{display:flex;align-items:flex-start;gap:.875rem;cursor:pointer}
+.consent-checkbox{width:20px;height:20px;flex-shrink:0;margin-top:1px;accent-color:var(--gold);cursor:pointer}
+.consent-text{font-size:.75rem;color:rgba(245,240,232,.65);line-height:1.55}
+.field-error{font-size:.7rem;color:#f87171;min-height:1.2rem;display:block}
+#submit-btn.loading{pointer-events:none;opacity:.85}
+.btn-spinner{animation:spin .8s linear infinite}.btn-spinner svg{width:18px;height:18px}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.form-status{margin-top:1rem;font-size:.875rem;line-height:1.5;padding:0;border-radius:var(--r-md);transition:all var(--t-base)}
+.form-status.success{padding:1rem;background:rgba(52,168,83,.15);border:1px solid rgba(52,168,83,.3);color:#6fcf97}
+.form-status.error{padding:1rem;background:rgba(224,82,82,.12);border:1px solid rgba(224,82,82,.3);color:#f87171}
+.demo-note{background:rgba(184,154,90,.1);border:1px solid rgba(184,154,90,.25);border-radius:var(--r-md);padding:.75rem 1rem;margin-bottom:1.5rem;font-size:.75rem;color:rgba(245,240,232,.7);line-height:1.5}
+.demo-note strong{color:var(--gold)}
+@media(max-width:1023px){.contact-inner{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.form-row .form-group{margin-bottom:1rem}}
+
+/* ═══════════════════════════════════════
+   MAP
+═══════════════════════════════════════ */
+.map-section{background:var(--navy)}
+.map-embed-wrap{width:100%;overflow:hidden}
+.map-embed-wrap iframe{width:100%;display:block;filter:grayscale(20%) contrast(1.1)}
+.map-cta-bar{background:#1e2d40;border-top:1px solid var(--border-dk);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.map-address{font-size:.875rem;color:rgba(245,240,232,.7)}
+@media(max-width:599px){.map-cta-bar{flex-direction:column;text-align:center}}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+.site-footer{background:var(--navy);border-top:1px solid var(--border-dk);color:var(--ivory)}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:2.5rem;padding:3rem 0}
+.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
+.footer-tagline{font-family:var(--serif);font-size:1rem;font-style:italic;color:rgba(245,240,232,.5);line-height:1.6;max-width:280px}
+.footer-col-title{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.footer-links ul{display:flex;flex-direction:column;gap:.25rem}
+.footer-links a,.footer-contact address a,.footer-contact address p{font-size:.875rem;color:rgba(245,240,232,.6);transition:color var(--t-fast);line-height:1.8;display:block;padding:.15rem 0}
+.footer-links a:hover,.footer-contact address a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border-dk);padding:1.5rem 0}
+.footer-bottom-inner{display:flex;flex-direction:column;gap:.75rem;align-items:center;text-align:center}
+.footer-disclaimer{font-size:.7rem;color:rgba(245,240,232,.35);line-height:1.6;max-width:700px}
+.footer-copy{font-size:.7rem;color:rgba(245,240,232,.4)}
+@media(max-width:767px){.footer-inner{grid-template-columns:1fr 1fr;gap:2rem;padding:2rem 0}.footer-brand{grid-column:1 / -1}}
+@media(max-width:479px){.footer-inner{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════
+   BACK TO TOP
+═══════════════════════════════════════ */
+.back-to-top{
+  position:fixed;bottom:2rem;right:1.25rem;z-index:10;
+  width:48px;height:48px;background:var(--gold);color:var(--navy);
+  border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-lg);transition:all var(--t-base);
+  opacity:0;transform:translateY(16px);pointer-events:none;touch-action:manipulation
+}
+.back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.back-to-top:hover{background:var(--gold-lt);transform:translateY(-2px)}
+.back-to-top:active{transform:scale(.95)}
+.back-to-top svg{width:20px;height:20px}
+@media(max-width:767px){.back-to-top{bottom:calc(5.5rem + env(safe-area-inset-bottom));right:.875rem}}
+
+/* ═══════════════════════════════════════
+   MOBILE STICKY BAR
+═══════════════════════════════════════ */
+.mob-sticky{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:40;
+  background:var(--navy);border-top:1px solid var(--border-dk);
+  padding:.625rem .875rem;gap:.625rem;
+  padding-bottom:calc(.625rem + env(safe-area-inset-bottom))
+}
+@media(max-width:767px){.mob-sticky{display:flex}}
+.mob-sticky-btn{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.875rem .5rem;border-radius:var(--r-sm);font-size:.875rem;font-weight:600;
+  min-height:52px;touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  user-select:none;position:relative;overflow:hidden;transition:all var(--t-fast)
+}
+.mob-sticky-btn svg{width:18px;height:18px;flex-shrink:0}
+.mob-sticky-call{background:var(--gold);color:var(--navy)}
+.mob-sticky-call:active{background:var(--gold-lt);transform:scale(.97)}
+.mob-sticky-msg{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.15);color:var(--ivory)}
+.mob-sticky-msg:active{background:rgba(255,255,255,.15);transform:scale(.97)}
+
+/* ═══════════════════════════════════════
+   TOAST
+═══════════════════════════════════════ */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);z-index:200;transition:transform .35s cubic-bezier(.34,1.56,.64,1),opacity var(--t-base);opacity:0;pointer-events:none}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;pointer-events:auto}
+.toast-inner{background:var(--navy);border:1px solid var(--border-dk);border-radius:var(--r-md);padding:1rem 1.5rem;display:flex;align-items:center;gap:.75rem;box-shadow:var(--shadow-lg);max-width:90vw}
+.toast-msg{font-size:.875rem;color:var(--ivory);line-height:1.5}
+.toast.toast-success .toast-inner{border-color:rgba(52,168,83,.3)}
+.toast.toast-error .toast-inner{border-color:rgba(224,82,82,.3)}
+@media(max-width:767px){.toast{bottom:calc(5.5rem + env(safe-area-inset-bottom))}}
+
+/* ═══════════════════════════════════════
+   SIDE NAVIGATION DOTS
+═══════════════════════════════════════ */
+.side-nav{
+  position:fixed;right:1.25rem;top:50%;transform:translateY(-50%);
+  z-index:30;display:flex;flex-direction:column;gap:.625rem;
+  pointer-events:auto
+}
+@media(max-width:1023px){.side-nav{display:none}}
+.side-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(184,154,90,.25);border:none;cursor:pointer;
+  transition:all var(--t-base);position:relative;touch-action:manipulation;
+  display:flex;align-items:center;justify-content:center
+}
+.side-dot::before{
+  content:attr(data-label);
+  position:absolute;right:calc(100% + 10px);
+  font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:rgba(245,240,232,.7);white-space:nowrap;
+  background:rgba(15,25,35,.9);border:1px solid var(--border-dk);
+  padding:.25rem .6rem;border-radius:var(--r-sm);
+  opacity:0;transform:translateX(4px);
+  transition:opacity var(--t-fast),transform var(--t-fast);pointer-events:none
+}
+.side-dot:hover::before,.side-dot.active::before{opacity:1;transform:translateX(0)}
+.side-dot:hover{background:rgba(184,154,90,.5);transform:scale(1.4)}
+.side-dot.active{background:var(--gold);box-shadow:0 0 0 3px rgba(184,154,90,.2);transform:scale(1.3)}
+
+/* ═══════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════ */
+.reveal-up,.reveal-left,.reveal-right{opacity:0;transition:opacity .7s ease,transform .7s ease}
+.reveal-up{transform:translateY(28px)}.reveal-left{transform:translateX(-28px)}.reveal-right{transform:translateX(28px)}
+.reveal-up.vis,.reveal-left.vis,.reveal-right.vis{opacity:1;transform:none}
+.services-grid .service-card:nth-child(1){transition-delay:.05s}.services-grid .service-card:nth-child(2){transition-delay:.1s}.services-grid .service-card:nth-child(3){transition-delay:.15s}.services-grid .service-card:nth-child(4){transition-delay:.2s}.services-grid .service-card:nth-child(5){transition-delay:.25s}.services-grid .service-card:nth-child(6){transition-delay:.3s}.services-grid .service-card:nth-child(7){transition-delay:.35s}.services-grid .service-card:nth-child(8){transition-delay:.4s}.services-grid .service-card:nth-child(9){transition-delay:.45s}
+.trust-grid .trust-card:nth-child(1){transition-delay:.05s}.trust-grid .trust-card:nth-child(2){transition-delay:.1s}.trust-grid .trust-card:nth-child(3){transition-delay:.15s}.trust-grid .trust-card:nth-child(4){transition-delay:.2s}.trust-grid .trust-card:nth-child(5){transition-delay:.25s}.trust-grid .trust-card:nth-child(6){transition-delay:.3s}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Прескочи на главната содржина</a>
+
+<!-- ══════════ SIDE NAV DOTS ══════════ -->
+<nav class="side-nav" id="side-nav" aria-label="Навигација по секции">
+  <button class="side-dot" data-section="hero"    data-label="Почетна"   aria-label="Оди на Почетна"></button>
+  <button class="side-dot" data-section="about"   data-label="За нас"    aria-label="Оди на За нас"></button>
+  <button class="side-dot" data-section="services"data-label="Услуги"    aria-label="Оди на Услуги"></button>
+  <button class="side-dot" data-section="process" data-label="Пристап"   aria-label="Оди на Пристап"></button>
+  <button class="side-dot" data-section="contact" data-label="Контакт"   aria-label="Оди на Контакт"></button>
+</nav>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header" role="banner">
+<div class="container header-inner">
+  <a href="#hero" class="logo" aria-label="Почетна">
+    <span class="logo-initials">МС</span>
+    <span class="logo-text"><span class="logo-title">Маја Стојковска</span><span class="logo-subtitle">Адвокат</span></span>
+  </a>
+  <nav class="main-nav" id="main-nav" role="navigation" aria-label="Главна навигација">
+    <ul class="nav-list" role="list">
+      <li><a href="#hero"    class="nav-link">Почетна</a></li>
+      <li><a href="#about"   class="nav-link">За канцеларијата</a></li>
+      <li><a href="#services"class="nav-link">Услуги</a></li>
+      <li><a href="#process" class="nav-link">Пристап</a></li>
+      <li><a href="#contact" class="nav-link">Контакт</a></li>
+    </ul>
+  </nav>
+  <div class="header-actions">
+    <a href="#contact" class="btn btn-gold header-cta">Закажете консултација</a>
+    <a href="tel:+38978280598" class="btn-call-m" aria-label="Јавете се">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.37a19.79 19.79 0 01-3.07-8.67A2 2 0 011.92 0h3a2 2 0 012 1.72c.12.96.36 1.9.71 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.71A2 2 0 0122 16.92z"/></svg>
+    </a>
+    <button class="hamburger" id="ham" aria-expanded="false" aria-controls="main-nav" aria-label="Отвори мени">
+      <span class="hline"></span><span class="hline"></span><span class="hline"></span>
+    </button>
+  </div>
+</div>
+</header>
+<div class="mob-overlay" id="mob-overlay" aria-hidden="true"></div>
+
+<main id="main-content">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero" aria-labelledby="hero-h">
+<div class="hero-bg-pattern" aria-hidden="true"></div>
+<div class="hero-bg-lines" aria-hidden="true"></div>
+<div class="container hero-inner">
+
+  <div class="hero-content reveal-left">
+    <div class="hero-eyebrow"><span class="eyebrow-line"></span><span>Адвокатска канцеларија · Скопје</span></div>
+    <h1 class="hero-heading" id="hero-h">Правна поддршка<br/>со <em>прецизност</em>,<br/>доверба и искуство.</h1>
+    <p class="hero-sub">Адвокатска канцеларија Маја Стојковска обезбедува правна помош, застапување и советување за физички и правни лица во Скопје и пошироко — со фокус на договорно, наследно, граѓанско, стопанско и корпоративно право.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-gold btn-lg">Закажете консултација</a>
+      <a href="#services" class="btn btn-outline btn-lg">Видете услуги</a>
+    </div>
+  </div>
+
+  <!-- Floating legal icons -->
+  <div class="hero-icons reveal-right" aria-hidden="true">
+    <!-- Scales → Services/Practice Areas -->
+    <div class="fi fi-scales" data-scroll="services" role="button" tabindex="0" aria-label="Правни услуги">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 7l7-4 7 4M5 7l3 6H2l3-6zM19 7l3 6h-6l3-6zM6 21h12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="fi-label">Услуги</span>
+    </div>
+    <!-- Contract → Services -->
+    <div class="fi fi-contract" data-scroll="services" role="button" tabindex="0" aria-label="Договорно право">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6M9 16h6M17 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 3v5h5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="fi-label">Договори</span>
+    </div>
+    <!-- Pen → About -->
+    <div class="fi fi-pen" data-scroll="about" role="button" tabindex="0" aria-label="За канцеларијата">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="fi-label">За нас</span>
+    </div>
+    <!-- Courthouse → Process -->
+    <div class="fi fi-courthouse" data-scroll="process" role="button" tabindex="0" aria-label="Пристап">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="fi-label">Пристап</span>
+    </div>
+    <!-- Shield → Contact -->
+    <div class="fi fi-shield" data-scroll="contact" role="button" tabindex="0" aria-label="Контакт">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="fi-label">Контакт</span>
+    </div>
+    <!-- Center seal -->
+    <div class="hero-seal">МС</div>
+  </div>
+</div>
+
+<div class="stats-strip">
+  <div class="container stats-inner">
+    <div class="stat-item"><span class="stat-number" data-target="11">0</span><span class="stat-plus">+</span><span class="stat-label">години<br/>искуство</span></div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item"><span class="stat-icon">⚖</span><span class="stat-label">Застапување пред судови<br/>и институции</span></div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item"><span class="stat-icon">📜</span><span class="stat-label">Договорно и<br/>наследно право</span></div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat-item"><span class="stat-icon">📍</span><span class="stat-label">Скопје,<br/>Капиштец</span></div>
+  </div>
+</div>
+<div class="scroll-ind" aria-hidden="true"><span class="scroll-line"></span><span class="scroll-txt">Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about" aria-labelledby="about-h">
+<div class="container about-inner">
+  <div class="about-text reveal-up">
+    <div class="section-eyebrow">За канцеларијата</div>
+    <h2 class="section-heading" id="about-h">Канцеларија изградена на доверба, јасност и правна прецизност.</h2>
+    <p class="about-para">Маја Стојковска е адвокат од Скопје со повеќе од 11 години искуство во правно советување и застапување. Канцеларијата работи со физички и правни лица, нудејќи практична, прецизна и навремена правна поддршка во различни области на правото.</p>
+    <p class="about-para about-edu"><em>Образованието е стекнато на Правниот факултет „Јустинијан Први" при Универзитетот „Св. Кирил и Методиј" во Скопје.</em></p>
+    <a href="#contact" class="btn btn-gold">Побарајте правна помош</a>
+  </div>
+  <div class="about-values reveal-right">
+    <div class="values-grid">
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M10 16l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="value-title">Доверливост</h3><p class="value-desc">Сите информации и случаи се третираат со апсолутна дискреција.</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h3 class="value-title">Прецизност</h3><p class="value-desc">Секој детаљ е важен. Правниот пристап е темелен и методичен.</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M8 24V12l8-8 8 8v12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="12" y="18" width="8" height="6" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="value-title">Стратегија</h3><p class="value-desc">Секој случај добива индивидуален правен пристап и стратегија.</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 16h6M22 16h6M16 4v6M16 22v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="value-title">Навремена комуникација</h3><p class="value-desc">Клиентот е информиран за секој чекор во постапката.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="services section section-dark" id="services" aria-labelledby="services-h">
+<div class="container">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow section-eyebrow-lt">Правни услуги</div>
+    <h2 class="section-heading section-heading-lt" id="services-h">Области на правна пракса</h2>
+    <p class="section-sub section-sub-lt">Канцеларијата нуди правна поддршка во широк спектар на правни области, прилагодена на потребите на секој клиент.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M8 6h24v28H8V6z" stroke="currentColor" stroke-width="1.5"/><path d="M13 13h14M13 18h14M13 23h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3 class="service-title">Облигационо и договорно право</h3>
+      <p class="service-short">Изработка, анализа и ревизија на договори, правни мислења и советување.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Подготовка и правна ревизија на сите видови договори, анализа на ризици пред потпишување, правни мислења и советување при сложени договорни односи.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">Пред потпишување на договор, при спор или кога сакате да проверите правните ризици.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6l12 8v12l-12 8L8 26V14l12-8z" stroke="currentColor" stroke-width="1.5"/><path d="M20 14v8M16 18h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3 class="service-title">Наследно право</h3>
+      <p class="service-short">Правна помош во оставински постапки, наследни спорови и договори.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Застапување во оставински постапки, помош при наследни договори, решавање на спорови меѓу наследници и советување за распределба на имот.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">Кога наследувате имот, при смртта на блиска личност или при спорови меѓу наследници.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4L6 12v10c0 7.18 5.82 13 14 16 8.18-3 14-8.82 14-16V12L20 4z" stroke="currentColor" stroke-width="1.5"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 class="service-title">Застапување пред судови</h3>
+      <p class="service-short">Застапување на клиенти во судски и управни постапки, поднесоци и жалби.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Целосно застапување во граѓански, стопански и управни постапки, подготовка на тужби, одговори, жалби и останати поднесоци.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">Кога сте тужени или тужите, при жалбени постапки или пред државни органи.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3 class="service-title">Граѓанско право</h3>
+      <p class="service-short">Правна помош во приватноправни односи, спорови и заштита на права.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Советување и застапување во граѓанскоправни односи: облигациони спорови, стварни права, имотни прашања и заштита на права.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">При имотни спорови, побарувања за надомест на штета или заштита на ваши права.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><rect x="6" y="18" width="28" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M13 18V12a7 7 0 0114 0v6" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="26" r="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <h3 class="service-title">Стопанско и корпоративно право</h3>
+      <p class="service-short">Правна поддршка за компании, основање фирми и деловни договори.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Правно советување за компании, основање на трговски друштва, корпоративни промени и деловни договори.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">При основање фирма, промени во статус, деловни спорови или корпоративно управување.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3 class="service-title">Работни односи</h3>
+      <p class="service-short">Советување поврзано со работни договори, права и обврски.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Правна помош при изработка и ревизија на работни договори, застапување во работни спорови и советување при откажување на работен однос.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">При проблеми со работодавач, откажување, права или при изработка на работни договори.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M12 20a8 8 0 1116 0" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h24M16 28l4-8 4 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 class="service-title">Осигурување и побарувања</h3>
+      <p class="service-short">Правна помош при наплата на побарувања и осигурителни прашања.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Застапување при наплата на доспеани побарувања, правна помош во осигурителни постапки и заштита при штети.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">Кога некој ви должи пари, при осигурителна штета или наплата на доспеани побарувања.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 18l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 class="service-title">Даночно право</h3>
+      <p class="service-short">Правни мислења за даноци, деловно работење и усогласеност.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Советување за даночни обврски, правна анализа на деловни одлуки и правни мислења за компании и претприемачи.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">При деловни трансакции, даночни прашања или при потреба за правна усогласеност.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+    <div class="service-card reveal-up" tabindex="0"><div class="service-card-inner">
+      <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M10 34V10l10-6 10 6v24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="15" y="22" width="10" height="12" stroke="currentColor" stroke-width="1.5"/><path d="M15 16h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3 class="service-title">ЦРРМ услуги</h3>
+      <p class="service-short">Основање компании, промени во регистрација пред Централен регистар.</p>
+      <div class="service-expanded">
+        <div class="service-expanded-inner">
+          <p>Канцеларијата делува и како лиценциран регистрационен агент за целосна поддршка при основање и промени пред ЦРРМ.</p>
+          <p class="service-when">Кога ви е потребно:</p>
+          <p class="service-when-text">При основање нова фирма, промени во сопственост, адреса или дејност.</p>
+          <a href="#contact" class="btn btn-gold-outline">Побарај консултација</a>
+        </div>
+      </div>
+      <button class="service-toggle" aria-expanded="false"><span class="toggle-text">Повеќе</span><svg class="toggle-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div></div>
+
+  </div>
+  <div class="section-cta-center reveal-up"><p class="cta-pre">Не сте сигурни за вашиот случај?</p><a href="#contact" class="btn btn-gold btn-lg">Закажете консултација</a></div>
+</div>
+</section>
+
+<!-- ══════════ INTERACTIVE LEGAL PROCESS ══════════ -->
+<section class="legal-process-section" id="legal-process" aria-labelledby="lp-heading">
+<div class="container">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow section-eyebrow-lt">Правен процес</div>
+    <h2 class="section-heading section-heading-lt" id="lp-heading">Вашиот правен пат — чекор по чекор</h2>
+    <p class="section-sub section-sub-lt">Кликнете на секој чекор и дознајте точно што да очекувате.</p>
+  </div>
+  <div class="lp-steps" role="tablist" aria-label="Правен процес">
+    <div class="lp-step active" data-step="1" role="tab" tabindex="0" aria-selected="true"  aria-controls="lp-p1">
+      <div class="lp-num">1</div><span class="lp-title">Консултација</span>
+    </div>
+    <div class="lp-step" data-step="2" role="tab" tabindex="0" aria-selected="false" aria-controls="lp-p2">
+      <div class="lp-num">2</div><span class="lp-title">Правна анализа</span>
+    </div>
+    <div class="lp-step" data-step="3" role="tab" tabindex="0" aria-selected="false" aria-controls="lp-p3">
+      <div class="lp-num">3</div><span class="lp-title">Стратегија</span>
+    </div>
+    <div class="lp-step" data-step="4" role="tab" tabindex="0" aria-selected="false" aria-controls="lp-p4">
+      <div class="lp-num">4</div><span class="lp-title">Застапување</span>
+    </div>
+  </div>
+  <div id="lp-p1" class="lp-panel active" role="tabpanel">
+    <div class="lp-panel-row">
+      <div class="lp-panel-icon">🤝</div>
+      <div>
+        <h3 class="lp-panel-title">Prvична консултација</h3>
+        <p class="lp-panel-desc">Во текот на првата средба темелно го разбираме вашиот случај — го слушаме, поставуваме прашања, разгледуваме документи и ги разјаснуваме целите. Нема генерален одговор, туку јасна слика на вашата правна ситуација.</p>
+        <div class="lp-tags"><span class="lp-tag">📋 Преглед на документи</span><span class="lp-tag">🎯 Дефинирање на целта</span><span class="lp-tag">❓ Прашања и одговори</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="lp-p2" class="lp-panel" role="tabpanel">
+    <div class="lp-panel-row">
+      <div class="lp-panel-icon">🔍</div>
+      <div>
+        <h3 class="lp-panel-title">Правна анализа</h3>
+        <p class="lp-panel-desc">По разговорот следи темелна анализа на правните прашања. Се утврдуваат ризиците, можностите и правните механизми кои стојат на ваша страна.</p>
+        <div class="lp-tags"><span class="lp-tag">⚖ Правна проценка</span><span class="lp-tag">🔎 Анализа на ризик</span><span class="lp-tag">📑 Правно мислење</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="lp-p3" class="lp-panel" role="tabpanel">
+    <div class="lp-panel-row">
+      <div class="lp-panel-icon">📐</div>
+      <div>
+        <h3 class="lp-panel-title">Стратегија и подготовка</h3>
+        <p class="lp-panel-desc">Врз основа на анализата се изготвуваат договори, поднесоци, жалби или друга правна документација. Секој документ е прецизно подготвен со цел заштита на вашите интереси.</p>
+        <div class="lp-tags"><span class="lp-tag">📝 Изготвување документи</span><span class="lp-tag">✍ Договори и жалби</span><span class="lp-tag">🛡 Заштита на интереси</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="lp-p4" class="lp-panel" role="tabpanel">
+    <div class="lp-panel-row">
+      <div class="lp-panel-icon">🏛</div>
+      <div>
+        <h3 class="lp-panel-title">Застапување и реализација</h3>
+        <p class="lp-panel-desc">Застапување пред судови, државни органи и деловни страни. Клиентот е редовно информиран за развојот и следните чекори. Целта е практичен резултат, не само правна формалност.</p>
+        <div class="lp-tags"><span class="lp-tag">⚖ Судско застапување</span><span class="lp-tag">🏢 Државни органи</span><span class="lp-tag">💬 Редовна комуникација</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-cta-center reveal-up" style="margin-top:2rem">
+    <a href="#contact" class="btn btn-gold btn-lg">Започнете со консултација</a>
+  </div>
+</div>
+</section>
+
+<!-- PROCESS TIMELINE (original) -->
+<section class="process section" id="process" aria-labelledby="process-h">
+<div class="container">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Пристап</div>
+    <h2 class="section-heading" id="process-h">Јасен процес од првиот разговор до правното решение.</h2>
+    <p class="section-sub">Секој клиент и случај заслужува систематски и промислен правен пристап.</p>
+  </div>
+  <div class="process-timeline">
+    <div class="timeline-item reveal-up"><div class="timeline-number">1</div><div class="timeline-connector"></div><div class="timeline-content"><h3 class="timeline-title">Prvична консултација</h3><p class="timeline-desc">Го разбираме вашиот случај, документите и целта.</p></div></div>
+    <div class="timeline-item reveal-up"><div class="timeline-number">2</div><div class="timeline-connector"></div><div class="timeline-content"><h3 class="timeline-title">Правна анализа</h3><p class="timeline-desc">Се утврдуваат ризиците, можностите и најдобриот правен пат.</p></div></div>
+    <div class="timeline-item reveal-up"><div class="timeline-number">3</div><div class="timeline-connector"></div><div class="timeline-content"><h3 class="timeline-title">Стратегија и подготовка</h3><p class="timeline-desc">Подготовка на договори, поднесоци, жалби или друга документација.</p></div></div>
+    <div class="timeline-item reveal-up"><div class="timeline-number">4</div><div class="timeline-connector"></div><div class="timeline-content"><h3 class="timeline-title">Застапување и реализација</h3><p class="timeline-desc">Застапување пред судови, институции или деловни страни.</p></div></div>
+    <div class="timeline-item reveal-up"><div class="timeline-number">5</div><div class="timeline-content"><h3 class="timeline-title">Навремена комуникација</h3><p class="timeline-desc">Клиентот добива јасни информации за следните чекори.</p></div></div>
+  </div>
+  <div class="section-cta-center reveal-up"><a href="#contact" class="btn btn-gold btn-lg">Проверете го вашиот правен ризик</a></div>
+</div>
+</section>
+
+<!-- TRUST -->
+<section class="trust section section-beige" id="trust" aria-labelledby="trust-h">
+<div class="container">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Доверба</div>
+    <h2 class="section-heading" id="trust-h">Зошто клиенти избираат прецизна правна поддршка?</h2>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h3 class="trust-title">Доверлив пристап</h3><p class="trust-desc">Дискреција и заштита на информациите на клиентите е фундаментален принцип на работата.</p></div>
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h20M16 6v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="trust-title">Јасна комуникација</h3><p class="trust-desc">Правниот јазик се преведува во разбирливи информации за клиентот.</p></div>
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10 14h12M10 19h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3 class="trust-title">Практични решенија</h3><p class="trust-desc">Правниот совет е насочен кон реални решенија, не само теоретски анализи.</p></div>
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4L4 12v8c0 5.52 5.12 10.12 12 12 6.88-1.88 12-6.48 12-12v-8L16 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h3 class="trust-title">Искусно застапување</h3><p class="trust-desc">Повеќе од 11 години искуство во застапување пред судови и државни органи.</p></div>
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M8 16l5 5 11-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="trust-title">Правна стратегија</h3><p class="trust-desc">Секој случај добива индивидуален правен пристап приспособен на конкретните потреби.</p></div>
+    <div class="trust-card reveal-up"><div class="trust-icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="22" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="trust-title">За физички и правни лица</h3><p class="trust-desc">Поддршка за граѓани, претприемачи и компании во сите правни прашања.</p></div>
+  </div>
+  <blockquote class="legal-quote reveal-up">
+    <div class="quote-mark" aria-hidden="true">„</div>
+    <p class="quote-text">Во правото, деталите не се формалност — тие се разликата помеѓу ризик и заштита.</p>
+    <footer class="quote-footer"><cite>Адвокатска канцеларија Маја Стојковска</cite></footer>
+  </blockquote>
+</div>
+</section>
+
+<!-- CASE SELECTOR -->
+<section class="case-selector section section-dark" id="case-selector" aria-labelledby="case-h">
+<div class="container">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow section-eyebrow-lt">Брза ориентација</div>
+    <h2 class="section-heading section-heading-lt" id="case-h">Изберете што ви е потребно</h2>
+    <p class="section-sub section-sub-lt">Изберете ситуација и дознајте повеќе за тоа со кое прашање можеме да помогнеме.</p>
+  </div>
+  <div class="case-buttons" role="group" aria-label="Изберете правна потреба">
+    <button class="case-btn" data-case="contract">Ми треба договор</button>
+    <button class="case-btn" data-case="inheritance">Имам наследно прашање</button>
+    <button class="case-btn" data-case="representation">Ми треба застапување</button>
+    <button class="case-btn" data-case="company">Имам компанија</button>
+    <button class="case-btn" data-case="claim">Имам побарување</button>
+    <button class="case-btn" data-case="opinion">Ми треба правно мислење</button>
+  </div>
+  <div class="case-result" id="case-result" hidden>
+    <div class="case-result-inner">
+      <p class="case-result-text" id="case-result-text"></p>
+      <a href="#contact" class="btn btn-gold">Пратете порака</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq" aria-labelledby="faq-h">
+<div class="container faq-inner">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Прашања и одговори</div>
+    <h2 class="section-heading" id="faq-h">Честo поставувани прашања</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="fa1"><span>Дали е потребно да закажам консултација однапред?</span><svg class="faq-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-answer" id="fa1"><p>Да, препорачливо е однапред да ја контактирате канцеларијата за термин, за да може адвокатот да се подготви соодветно за вашиот случај.</p></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="fa2"><span>Кои документи треба да ги донесам?</span><svg class="faq-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-answer" id="fa2"><p>Зависи од случајот, но најдобро е да ги подготвите сите релевантни договори, решенија, известувања, судски акти или комуникација.</p></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="fa3"><span>Дали канцеларијата работи со компании?</span><svg class="faq-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-answer" id="fa3"><p>Да, канцеларијата обезбедува правна поддршка за физички и правни лица, вклучително договори, корпоративни промени и деловно советување.</p></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="fa4"><span>Дали може да се побара правно мислење?</span><svg class="faq-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-answer" id="fa4"><p>Да, може да се побара правна анализа или мислење врз основа на конкретни документи и факти.</p></div></div>
+    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="fa5"><span>Дали испраќањето порака преку формата значи ангажирање адвокат?</span><svg class="faq-icon" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-answer" id="fa5"><p>Не. Испраќањето порака е почетен контакт. Адвокатски однос се воспоставува само по директна комуникација, договор и потпишување на соодветна документација.</p></div></div>
+  </div>
+  <div class="section-cta-center reveal-up" style="margin-top:3rem"><a href="#contact" class="btn btn-gold btn-lg">Побарајте правна помош</a></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section section-dark" id="contact" aria-labelledby="contact-h">
+<div class="container contact-inner">
+  <div class="contact-info reveal-left">
+    <div class="section-eyebrow section-eyebrow-lt">Контакт</div>
+    <h2 class="section-heading section-heading-lt" id="contact-h">Контактирајте ја канцеларијата</h2>
+    <div class="contact-details">
+      <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><strong>Адреса</strong><address>Народен Фронт 19-А, Капиштец<br/>ТЦ Беверли Хилс, лок. 10-Б<br/>Скопје, Северна Македонија</address></div></div>
+      <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.37a19.79 19.79 0 01-3.07-8.67A2 2 0 011.92 0h3a2 2 0 012 1.72c.12.96.36 1.9.71 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.71A2 2 0 0122 16.92z"/></svg></div><div><strong>Телефон</strong><a href="tel:+38978280598" class="contact-link">+389 78 280 598</a></div></div>
+      <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><strong>Е-пошта</strong><a href="mailto:advokatmajastojkovska@gmail.com" class="contact-link">advokatmajastojkovska@gmail.com</a></div></div>
+      <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><div><strong>Работно време</strong><span>Понеделник – Петок: 08:30 – 16:30</span></div></div>
+    </div>
+    <div class="contact-actions">
+      <a href="tel:+38978280598" class="btn btn-gold">Јавете се сега</a>
+      <a href="mailto:advokatmajastojkovska@gmail.com" class="btn btn-outline-lt">Испратете е-пошта</a>
+      <a href="https://maps.google.com/?q=Naroden+Front+19A,+Beverly+Hills,+Skopje,+North+Macedonia" target="_blank" rel="noopener noreferrer" class="btn btn-outline-lt">Google Maps</a>
+    </div>
+  </div>
+
+  <div class="contact-form-wrap reveal-right">
+    <div class="demo-note"><strong>⚠ Preview режим:</strong> Формата валидира во живо. За вистинско испраќање, поставете contact.php на PHP хостинг.</div>
+    <form id="contact-form" novalidate>
+      <div class="hp-field" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"/></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-name" class="form-label">Ime и презиме <span class="required">*</span></label>
+          <input type="text" id="f-name" name="name" class="form-input" required autocomplete="name" placeholder="Вашето целосно ime"/>
+          <span class="field-error" id="err-name" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-email" class="form-label">Е-пошта <span class="required">*</span></label>
+          <input type="email" id="f-email" name="email" class="form-input" required autocomplete="email" placeholder="vasa@email.com"/>
+          <span class="field-error" id="err-email" role="alert"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-phone" class="form-label">Телефон <span class="optional">(незадолж.)</span></label>
+          <input type="tel" id="f-phone" name="phone" class="form-input" autocomplete="tel" placeholder="+389 XX XXX XXX"/>
+          <span class="field-error" id="err-phone" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-service" class="form-label">Правна област <span class="required">*</span></label>
+          <select id="f-service" name="service" class="form-input form-select" required>
+            <option value="" disabled selected>— Изберете —</option>
+            <option>Договорно право</option><option>Наследно право</option><option>Застапување</option>
+            <option>Корпоративно право</option><option>Работни односи</option>
+            <option>Наплата на побарувања</option><option>Даночно право</option>
+            <option>ЦРРМ услуги</option><option>Друго</option>
+          </select>
+          <span class="field-error" id="err-service" role="alert"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="f-msg" class="form-label">Порака <span class="required">*</span></label>
+        <textarea id="f-msg" name="message" class="form-input form-textarea" rows="5" required placeholder="Опишете накратко вашиот правен случај или прашање..."></textarea>
+        <span class="field-error" id="err-message" role="alert"></span>
+      </div>
+      <div class="form-group form-consent">
+        <label class="consent-label">
+          <input type="checkbox" id="f-consent" name="consent" class="consent-checkbox" required/>
+          <span class="consent-text">Се согласувам моите податоци да бидат искористени исклучиво за одговор на ова барање. <span class="required">*</span></span>
+        </label>
+        <span class="field-error" id="err-consent" role="alert"></span>
+      </div>
+      <button type="submit" class="btn btn-gold btn-lg btn-full" id="submit-btn">
+        <span class="btn-text">Испратете порака</span>
+        <span class="btn-spinner" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
+      </button>
+      <div class="form-status" id="form-status" role="status" aria-live="assertive"></div>
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="map">
+<div class="map-embed-wrap">
+  <iframe title="Локација — Адвокатска канцеларија Маја Стојковска" src="https://maps.google.com/maps?q=Naroden+Front+19A,+Skopje,+North+Macedonia&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="360" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="map-cta-bar">
+  <span class="map-address">Народен Фронт 19-А, ТЦ Беверли Хилс, лок. 10-Б, Скопје</span>
+  <a href="https://maps.google.com/?q=Naroden+Front+19A,+Beverly+Hills,+Skopje,+North+Macedonia" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Отвори во Google Maps</a>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+  <div class="footer-brand">
+    <a href="#hero" class="footer-logo"><span class="logo-initials">МС</span><span class="logo-text"><span class="logo-title">Маја Стојковска</span><span class="logo-subtitle">Адвокат · Скопје</span></span></a>
+    <p class="footer-tagline">Правна поддршка со прецизност, доверба и искуство.</p>
+  </div>
+  <div class="footer-links">
+    <h4 class="footer-col-title">Брзи линкови</h4>
+    <ul><li><a href="#hero">Почетна</a></li><li><a href="#about">За канцеларијата</a></li><li><a href="#services">Услуги</a></li><li><a href="#process">Пристап</a></li><li><a href="#faq">ЧПП</a></li><li><a href="#contact">Контакт</a></li></ul>
+  </div>
+  <div class="footer-contact">
+    <h4 class="footer-col-title">Контакт</h4>
+    <address><p>Народен Фронт 19-А, Капиштец<br/>ТЦ Беверли Хилс, лок. 10-Б<br/>Скопје, Северна Македонија</p><p><a href="tel:+38978280598">+389 78 280 598</a></p><p><a href="mailto:advokatmajastojkovska@gmail.com">advokatmajastojkovska@gmail.com</a></p><p>Пон – Пет: 08:30 – 16:30</p></address>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="container footer-bottom-inner">
+    <p class="footer-disclaimer">Информациите на оваа веб-страница се од информативен карактер и не претставуваат правен совет. За конкретен случај, потребна е директна консултација со адвокат.</p>
+    <p class="footer-copy">&copy; <span id="yr"></span> Адвокатска канцеларија Маја Стојковска. Сите права се задржани.</p>
+  </div>
+</div>
+</footer>
+
+<button class="back-to-top" id="btt" aria-label="Назад на врв">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<div class="mob-sticky" role="complementary" aria-label="Брз контакт">
+  <a href="tel:+38978280598" class="mob-sticky-btn mob-sticky-call">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.31 14.1v2.5a1.67 1.67 0 01-1.82 1.67 16.49 16.49 0 01-7.2-2.56A16.25 16.25 0 012.5 8.92 16.49 16.49 0 01-.06 1.77 1.67 1.67 0 011.6.1h2.5a1.67 1.67 0 011.67 1.43c.1.8.3 1.59.59 2.34a1.67 1.67 0 01-.38 1.76l-1.06 1.06a13.33 13.33 0 005 5l1.06-1.06a1.67 1.67 0 011.76-.38c.75.29 1.54.49 2.34.59A1.67 1.67 0 0118.31 14.1z"/></svg>
+    Јавете се
+  </a>
+  <a href="#contact" class="mob-sticky-btn mob-sticky-msg">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 2.5h-15A2.5 2.5 0 000 5v10a2.5 2.5 0 002.5 2.5h15A2.5 2.5 0 0020 15V5a2.5 2.5 0 00-2.5-2.5z"/><path d="M0 5l10 7 10-7"/></svg>
+    Пратете порака
+  </a>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><div class="toast-inner"><span class="toast-msg" id="toast-msg"></span></div></div>
+
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ── Header scroll + back-to-top — rAF throttled ── */
+const hdr=$('#site-header');
+const btt=$('#btt');
+let scrollRaf=null;
+function onScroll(){
+  scrollRaf=null;
+  const y=scrollY;
+  hdr.classList.toggle('scrolled',y>40);
+  btt.classList.toggle('visible',y>500);
+}
+window.addEventListener('scroll',()=>{if(!scrollRaf)scrollRaf=requestAnimationFrame(onScroll)},{passive:true});
+
+/* ── Mobile menu ── */
+const ham=$('#ham'),nav=$('#main-nav'),ov=$('#mob-overlay');
+function openNav(){nav.classList.add('open');ov.classList.add('active');ov.removeAttribute('aria-hidden');ham.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'}
+function closeNav(){nav.classList.remove('open');ov.classList.remove('active');ov.setAttribute('aria-hidden','true');ham.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+ham.addEventListener('click',()=>nav.classList.contains('open')?closeNav():openNav());
+ov.addEventListener('click',closeNav);
+$$('.nav-link',nav).forEach(l=>l.addEventListener('click',closeNav));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open'))closeNav()});
+
+/* ── Smooth scroll helper ── */
+function goTo(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  if(nav.classList.contains('open')){closeNav();setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),380)}
+  else el.scrollIntoView({behavior:'smooth',block:'start'})
+}
+$$('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const id=a.getAttribute('href').slice(1);
+  const t=document.getElementById(id);
+  if(!t)return;
+  e.preventDefault();goTo(id);
+}));
+
+/* ── Scroll reveal ── */
+const prefRed=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(prefRed){$$('.reveal-up,.reveal-left,.reveal-right').forEach(el=>el.classList.add('vis'))}
+else{
+  const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+  $$('.reveal-up,.reveal-left,.reveal-right').forEach(el=>ro.observe(el));
+}
+
+/* ── Counter ── */
+$$('[data-target]').forEach(el=>{
+  const co=new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)return;co.unobserve(el);
+    const tgt=+el.dataset.target;if(prefRed){el.textContent=tgt;return}
+    const dur=1800,s=performance.now();
+    const step=t=>{const p=Math.min((t-s)/dur,1),v=1-Math.pow(1-p,3);el.textContent=Math.floor(v*tgt);if(p<1)requestAnimationFrame(step)};
+    requestAnimationFrame(step)},{threshold:.5});co.observe(el);
+});
+
+/* ══════════════════════════════════════
+   1. FLOATING MINI LEGAL ICONS
+══════════════════════════════════════ */
+$$('.fi').forEach(icon=>{
+  const target=icon.dataset.scroll;
+  // Click/tap → scroll to section
+  icon.addEventListener('click',()=>goTo(target));
+  icon.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();goTo(target)}});
+});
+
+/* ══════════════════════════════════════
+   2. SERVICE CARDS — tilt on mouse + expand
+══════════════════════════════════════ */
+$$('.service-card').forEach(card=>{
+  const btn=card.querySelector('.service-toggle');
+  const exp=card.querySelector('.service-expanded');
+  if(!btn||!exp)return;
+
+  // CSS 3D tilt — rAF-throttled, rect cached on enter, skip on mobile
+  let tiltRaf=null, cardRect=null;
+  card.addEventListener('mouseenter',()=>{cardRect=card.getBoundingClientRect()});
+  card.addEventListener('mousemove',e=>{
+    if(!cardRect||window.matchMedia('(hover:none)').matches)return;
+    if(tiltRaf)return;
+    tiltRaf=requestAnimationFrame(()=>{
+      tiltRaf=null;
+      const x=(e.clientX-cardRect.left)/cardRect.width-.5;
+      const y=(e.clientY-cardRect.top)/cardRect.height-.5;
+      card.style.transform=`perspective(700px) rotateY(${x*7}deg) rotateX(${-y*5}deg) scale3d(1.02,1.02,1.02)`;
+      card.style.boxShadow=`${-x*10}px ${y*8}px 28px rgba(0,0,0,.22),0 0 0 1px rgba(184,154,90,.22)`;
+    });
+  });
+  card.addEventListener('mouseleave',()=>{
+    if(tiltRaf){cancelAnimationFrame(tiltRaf);tiltRaf=null}
+    cardRect=null;
+    card.style.transform='';
+    card.style.boxShadow='';
+  });
+
+  // Expand/collapse
+  const toggle=()=>{
+    const open=btn.getAttribute('aria-expanded')==='true';
+    $$('.service-card').forEach(c=>{if(c===card)return;const b=c.querySelector('.service-toggle'),e=c.querySelector('.service-expanded');if(b)b.setAttribute('aria-expanded','false');if(e){e.classList.remove('open');e.setAttribute('aria-hidden','true')}c.classList.remove('expanded');c.style.transform='';c.style.boxShadow=''});
+    if(open){btn.setAttribute('aria-expanded','false');exp.classList.remove('open');exp.setAttribute('aria-hidden','true');card.classList.remove('expanded')}
+    else{btn.setAttribute('aria-expanded','true');exp.classList.add('open');exp.setAttribute('aria-hidden','false');card.classList.add('expanded');setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),150)}
+  };
+  btn.addEventListener('click',e=>{e.stopPropagation();toggle()});
+  card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target===card){e.preventDefault();toggle()}});
+});
+
+/* ══════════════════════════════════════
+   3. STICKY SIDE NAVIGATION DOTS
+══════════════════════════════════════ */
+const dots=$$('.side-dot');
+const sections=['hero','about','services','process','contact'];
+
+dots.forEach(dot=>{
+  dot.addEventListener('click',()=>goTo(dot.dataset.section));
+  dot.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();goTo(dot.dataset.section)}});
+});
+
+// Scroll spy for dots
+const dotObs=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const id=entry.target.id;
+      dots.forEach(d=>{d.classList.toggle('active',d.dataset.section===id)});
+    }
+  });
+},{threshold:.35,rootMargin:'-80px 0px -35% 0px'});
+sections.forEach(id=>{const el=document.getElementById(id);if(el)dotObs.observe(el)});
+
+/* ══════════════════════════════════════
+   4. LEGAL PROCESS INTERACTIVE TABS
+══════════════════════════════════════ */
+$$('.lp-step').forEach(step=>{
+  const activate=()=>{
+    const n=step.dataset.step;
+    $$('.lp-step').forEach(s=>{s.classList.remove('active');s.setAttribute('aria-selected','false')});
+    $$('.lp-panel').forEach(p=>p.classList.remove('active'));
+    step.classList.add('active');step.setAttribute('aria-selected','true');
+    const panel=$('#lp-p'+n);
+    if(panel){panel.classList.add('active')}
+  };
+  step.addEventListener('click',activate);
+  step.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}});
+});
+
+/* ══════════════════════════════════════
+   5. FAQ
+══════════════════════════════════════ */
+$$('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-question'),aid=q?.getAttribute('aria-controls'),a=aid?$('#'+aid):null;
+  if(!q||!a)return;
+  q.addEventListener('click',()=>{
+    const open=q.getAttribute('aria-expanded')==='true';
+    $$('.faq-item').forEach(i=>{if(i===item)return;const iq=i.querySelector('.faq-question'),ia=$('#'+(iq?.getAttribute('aria-controls')||''));if(iq)iq.setAttribute('aria-expanded','false');if(ia){ia.classList.remove('open');ia.setAttribute('aria-hidden','true')}i.classList.remove('open')});
+    const next=!open;q.setAttribute('aria-expanded',String(next));a.classList.toggle('open',next);a.setAttribute('aria-hidden',String(!next));item.classList.toggle('open',next);
+  });
+});
+
+/* ── Case selector ── */
+const cases={
+  contract:'Ако ви е потребен договор, канцеларијата може да помогне со изработка, ревизија и правна анализа на ризиците пред потпишување. Секој договор се изготвува прецизно, со фокус на заштита на вашите интереси.',
+  inheritance:'Наследното право може да биде сложено и емотивно. Канцеларијата нуди правна помош во оставински постапки, наследни спорови и сите правни прашања поврзани со распределба на имот.',
+  representation:'Застапувањето пред суд бара искуство, прецизност и добра стратегија. Канцеларијата го подготвува секој предмет темелно и ги брани вашите интереси во сите фази на постапката.',
+  company:'За правни лица, канцеларијата нуди поддршка во корпоративно управување, договори, работни односи, деловно советување и ЦРРМ регистрации. Правната сигурност на вашата компанија е приоритет.',
+  claim:'При побарувања и наплата, правниот пристап е клучен. Канцеларијата обезбедува правна стратегија, поднесоци и застапување за реализација на вашите побарувања.',
+  opinion:'Правното мислење е темелна анализа на конкретни документи и факти. Канцеларијата изготвува јасни, практични и добро поткрепени правни мислења за физички и правни лица.'
+};
+const cr=$('#case-result'),ct=$('#case-result-text');
+$$('.case-btn').forEach(b=>b.addEventListener('click',()=>{
+  const msg=cases[b.dataset.case];if(!msg)return;
+  $$('.case-btn').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});
+  b.classList.add('active');b.setAttribute('aria-pressed','true');
+  ct.textContent=msg;cr.removeAttribute('hidden');
+  cr.style.animation='none';void cr.offsetWidth;cr.style.animation='fadeUp .35s ease';
+  if(innerWidth<768)setTimeout(()=>cr.scrollIntoView({behavior:'smooth',block:'nearest'}),150);
+}));
+
+/* ── Back to top ── */
+btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+
+/* ── Active nav links ── */
+const nls=$$('.nav-link');
+const navObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){const id=en.target.id;nls.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+id))}})},{threshold:.3,rootMargin:'-80px 0px -40% 0px'});
+$$('section[id]').forEach(s=>navObs.observe(s));
+
+/* ── Toast helper ── */
+function doToast(type,msg,dur=4500){const t=$('#toast'),tm=$('#toast-msg');if(!t||!tm)return;t.className='toast toast-'+type+' show';tm.textContent=msg;clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),dur)}
+
+/* ══════════════════════════════════════
+   CONTACT FORM — full validation
+══════════════════════════════════════ */
+const form=$('#contact-form'),sbtn=$('#submit-btn'),status=$('#form-status');
+const V={
+  name:v=>v.trim().length>=2?'':'Внесете го вашето целосно ime (мин. 2 знаци).',
+  email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())?'':'Внесете валидна е-пошта.',
+  phone:v=>v===''||/^[\d\s+\-()]{6,20}$/.test(v.trim())?'':'Внесете валиден телефонски број.',
+  service:v=>v!==''?'':'Изберете правна област.',
+  message:v=>v.trim().length>=10?'':'Пораката мора да содржи најмалку 10 знаци.',
+  consent:(_,c)=>c?'':'Мора да се согласите со обработката на податоци.'
+};
+function showErr(id,msg){const e=$('#err-'+id),i=$('#f-'+id);if(e)e.textContent=msg;if(i)i.classList.toggle('error',!!msg)}
+function clearErrs(){Object.keys(V).forEach(k=>showErr(k,''));status.textContent='';status.className='form-status'}
+function vf(name){const el=form.elements[name];if(!el)return true;const val=el.type==='checkbox'?el.checked:el.value;const err=V[name]?.(String(val),Boolean(val));if(err!==undefined)showErr(name,err);return!err}
+
+['name','email','phone','service','message'].forEach(n=>{
+  const el=form.elements[n];
+  if(el){el.addEventListener('blur',()=>vf(n));el.addEventListener('input',()=>{if(el.classList.contains('error'))vf(n)})}
+});
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();clearErrs();
+  const ok=['name','email','phone','service','message','consent'].every(vf);
+  if(!ok){const fe=form.querySelector('.error');if(fe)fe.focus();return}
+  const bt=sbtn.querySelector('.btn-text'),bs=sbtn.querySelector('.btn-spinner');
+  sbtn.classList.add('loading');if(bt)bt.hidden=true;if(bs)bs.hidden=false;sbtn.disabled=true;
+  try{
+    // ── Production: uncomment fetch, remove simulation ──
+    // const r=await fetch('contact.php',{method:'POST',body:new FormData(form),headers:{'X-Requested-With':'XMLHttpRequest'}});
+    // const d=await r.json();
+    await new Promise(r=>setTimeout(r,1200));
+    const d={success:true,message:'Вашата порака е успешно испратена. Канцеларијата ќе ве контактира во најкраток можен рок.'};
+    if(d.success){status.textContent=d.message;status.className='form-status success';form.reset();doToast('toast-success','✓ Пораката е испратена успешно!');setTimeout(()=>status.scrollIntoView({behavior:'smooth',block:'nearest'}),100)}
+    else{status.textContent=d.message||'Се случи грешка.';status.className='form-status error';doToast('toast-error','✗ Грешка при испраќање.')}
+  }catch(err){status.textContent='Не може да се поврзе со серверот.';status.className='form-status error';doToast('toast-error','✗ Грешка при поврзување.')}
+  finally{sbtn.classList.remove('loading');if(bt)bt.hidden=false;if(bs)bs.hidden=true;sbtn.disabled=false}
+});
+
+})();
+</script>
+</body>
+</html>
